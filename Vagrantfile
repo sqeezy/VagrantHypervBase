@@ -9,9 +9,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "hyperv" do |h|
     h.linked_clone = true
-    h.vm_integration_services = {
-      time_synchronization: true
-    }
   end
 
 end
